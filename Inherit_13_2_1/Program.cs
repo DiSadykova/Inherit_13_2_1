@@ -34,7 +34,7 @@ namespace Inherit_13_2_1
             WidthBuild = widthBuild;
             HeightBuild = heightBuild;
         }
-        public void Print()
+        public virtual void Print()
         {
             Console.WriteLine("Адрес здания: {0}", AdresBuild);
             Console.WriteLine("Длина здания: {0}",LenghtBuild);
@@ -54,10 +54,11 @@ namespace Inherit_13_2_1
             HeightBuild = heightBuild;
             StoreyHeight = storeyHeight;
         }
-        public new void Print()
+        public override void Print()
         {
-            Print();
+            base.Print();
             Console.WriteLine("Этажность здания: {0}", StoreyHeight);
         }
+
     }
 }
