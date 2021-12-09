@@ -14,8 +14,9 @@ namespace Inherit_13_2_1
             building.Print();
             Console.WriteLine();
             MultiBuilding multiBuilding = new MultiBuilding("Кремлевская 33", 25, 100, 18, 3);
-            multiBuilding.PrintMulti();
+            multiBuilding.Print();
             Console.ReadKey();
+
 
         }
 
@@ -53,7 +54,7 @@ namespace Inherit_13_2_1
             HeightBuild = heightBuild;
             StoreyHeight = storeyHeight;
         }
-        public void PrintMulti()
+        public new void Print()
         {
             Print();
             Console.WriteLine("Этажность здания: {0}", StoreyHeight);
